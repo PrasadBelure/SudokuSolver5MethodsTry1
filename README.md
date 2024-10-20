@@ -92,4 +92,25 @@ The genetic algorithm mimics **natural selection** by evolving a population of c
 
 ---
 
+# Performance Analysis of Sudoku Solving Algorithms
+
+In our experiments, we tested the performance of five different Sudoku solving methods across three difficulty levels: Easy, Medium, and Hard. The results are based on ten random Sudoku puzzles for each method at each difficulty level.
+
+## Summary of Findings
+- **Constraint Propagation** does not perform well for some Medium puzzles and fails entirely on Hard puzzles.
+- **Simulated Annealing** takes noticeably more time for Medium puzzles.
+- **Genetic Algorithm** requires excessive time for both Easy and Medium puzzles, struggling significantly on Hard.
+
+| Method                                          | Easy (45 Filled) | Medium (36 Filled) | Hard (27 Filled) |
+|-------------------------------------------------|------------------|--------------------|-------------------|
+| Backtracking                                    | 10/10            | 10/10              | 10/10             |
+| Constraint Propagation                          | 10/10            | 5/10               | 0/10              |
+| Minimum Remaining Value + Degree Heuristic      | 10/10            | 10/10              | 10/10             |
+| Simulated Annealing                             | 10/10            | 10/10              | 10/10             |
+| Genetic Algorithm                               | 9/10 (More T)    | 0/10               | 0/10              |
+
+### Conclusion
+Overall, the Backtracking and Minimum Remaining Value methods performed consistently across all levels of difficulty, while Constraint Propagation, Simulated Annealing, and the Genetic Algorithm showed limitations, especially at higher difficulty levels.
+
+
 This project showcases how different AI and algorithmic techniques can be applied to solve the same problem, demonstrating their strengths and limitations.
