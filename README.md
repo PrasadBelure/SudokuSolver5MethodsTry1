@@ -2,7 +2,7 @@
 Sudoku Solver & Generator
 This project is a Sudoku Solver and Generator built using Java Swing for the GUI. It supports multiple algorithms, including Backtracking, Constraint Programming, MRV (Minimum Remaining Values heuristic), Simulated Annealing, and Genetic Algorithm for solving puzzles. Users can also generate new puzzles at different difficulty levels and request hints.
 
-Features
+##Features
 Solve Sudoku using multiple algorithms:
 Backtracking
 Constraint Programming
@@ -13,7 +13,7 @@ Generate Sudoku puzzles with Easy, Medium, and Hard difficulty levels.
 Validate Sudoku solutions with visual feedback for invalid entries.
 Hint feature to provide suggestions for valid moves.
 User-friendly GUI built with Java Swing for easy interaction.
-Project Structure
+##Project Structure
 SudokuGUI.java: Implements the graphical user interface (GUI) using Java Swing.
 SudokuLogicBackTracking.java: Contains the backtracking algorithm for solving Sudoku.
 SudokuSolverCP.java: Uses constraint programming techniques.
